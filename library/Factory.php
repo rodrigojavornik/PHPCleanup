@@ -2,14 +2,25 @@
 
 namespace PHPCleanup;
 
+use ReflectionClass;
+
 final class Factory
 {
 
-    private $filtersNameSpace = "PHPCleanup/Filters/";
+    private static $filtersNameSpace = "PHPCleanup/Filters/";
 
-    public static function executeFilter($filterName, $value, $arguments = null)
+    public static function getFilter($filterName, $arguments = null)
     {
-        $class = $this->filtersNameSpace . "$filterName()";
-        return (new $class)->$filterName($value, $arguments);
+        $className = 'PHPCleanup\Filters\\' . ucfirst($filterName);
+        $reflectionClass = self::createReflectionClass($className);
+        $instance = $reflectionClass->newInstanceArgs($arguments);
+        
+        return $instance;
+    }
+
+    private static function createReflectionClass($className)
+    {
+        //adicionar as exceptions caso a classe não exista, etc. 
+        return new ReflectionClass($className);
     }
 }

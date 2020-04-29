@@ -7,7 +7,7 @@ use ReflectionClass;
 final class Factory
 {
 
-    private static $filtersNameSpace = "PHPCleanup/Filters/";
+    private static $filtersNameSpace = "PHPCleanup\Filters\\";
 
     public static function getFilter($filterName, $arguments = null)
     {

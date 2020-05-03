@@ -6,6 +6,7 @@ use PHPCleanup\Filters\AbstractFilter;
 /**
  * @method static Sanitize sanitize() 
  * @method static Sanitize captalize() 
+ * @method static Sanitize dateTime($dateFormat) 
  * @method static Sanitize email() 
  * @method static Sanitize formatNumber($decimalPlace, $decimalSeparator, $thousandsSeparator) 
  * @method static Sanitize input() 

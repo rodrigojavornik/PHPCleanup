@@ -1,5 +1,5 @@
 {
-    "name": "PHP Cleanup",
+    "name": "rodrigojavornik/php-cleanup",
     "description": "A PHP Sanitation Library",
     "keywords": [
       "PHP",
@@ -16,8 +16,7 @@
       }
     ],
     "require": {
-      "php": ">=7.0.0",
-        "respect/validation": "^2.0"
+      "php": ">=7.0.0"
     },
     "require-dev": {
       "phpunit/phpunit": ">=4.8 < 6.0"

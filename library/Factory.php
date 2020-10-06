@@ -20,7 +20,6 @@ final class Factory
 
     private static function createReflectionClass($className)
     {
-        //adicionar as exceptions caso a classe não exista, etc. 
         return new ReflectionClass($className);
     }
 }

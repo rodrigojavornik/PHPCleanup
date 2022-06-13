@@ -4,8 +4,8 @@ namespace PHPCleanup\Filters;
 
 class Lowercase extends AbstractFilter {
 
-    public function sanitize($value)
+    public function sanitize($value, string $encoding = null)
     {
-        return strtolower($value);
+        return mb_strtolower($value, $encoding);
     }
 }

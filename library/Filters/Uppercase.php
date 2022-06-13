@@ -4,8 +4,8 @@ namespace PHPCleanup\Filters;
 
 class Uppercase extends AbstractFilter {
 
-    public function sanitize($value)
+    public function sanitize($value, string $encoding = null)
     {
-        return strtoupper($value);
+        return mb_strtoupper($value, $encoding);
     }
 }

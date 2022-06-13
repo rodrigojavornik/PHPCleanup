@@ -2,3 +2,4 @@ vendor
 .vscode
 index.php
 .idea
+composer.lock

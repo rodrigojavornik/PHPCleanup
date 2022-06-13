@@ -1,33 +1,33 @@
 {
-    "name": "rodrigojavornik/php-cleanup",
-    "description": "A PHP Sanitation Library",
-    "keywords": [
-      "PHP",
-      "sanitation",
-      "library"
-    ],
-    "homepage": "https://github.com/rodrigojavornik/PHPCleanup",
-    "license": "MIT",
-    "authors": [
-      {
-        "name": "Rodrigo Dais Javornik",
-        "email": "rodrigojavornik@gmail.com",
-        "homepage": "https://rodrigojavornik.com"
-      }
-    ],
-    "require": {
-      "php": ">=7.0.0"
-    },
-    "require-dev": {
-      "phpunit/phpunit": ">=4.8 <= 6.0"
-    },
-    "autoload-dev": {
-      "psr-4": {
-        "Tests\\": "tests/",
-        "PHPCleanup\\": "library/"
-      }
-    },
-    "scripts" : {
-      "test" : "phpunit ./tests --colors=always"
+  "name": "rodrigojavornik/php-cleanup",
+  "description": "A PHP Sanitation Library",
+  "keywords": [
+    "PHP",
+    "sanitation",
+    "library"
+  ],
+  "homepage": "https://github.com/rodrigojavornik/PHPCleanup",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rodrigo Dais Javornik",
+      "email": "rodrigojavornik@gmail.com",
+      "homepage": "https://rodrigojavornik.com"
     }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PHPCleanup\\": "library/",
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit ./tests --colors=always"
+  }
 }

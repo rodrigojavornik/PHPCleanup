@@ -13,9 +13,10 @@ use PHPCleanup\Filters\AbstractFilter;
  * @method static Sanitize input() 
  * @method static Sanitize lowercase($encoding = null) 
  * @method static Sanitize money($locale = 'en-US') 
- * @method static Sanitize onlyAlpha($additionalChars) 
+ * @method static Sanitize onlyAlpha($additionalChars = '') 
  * @method static Sanitize onlyLatinAlpha($additionalChars) 
  * @method static Sanitize onlyNumbers() 
+ * @method static Sanitize stripTags($allowableTags = null) 
  * @method static Sanitize trim() 
  * @method static Sanitize uppercase($encoding = null)
  */

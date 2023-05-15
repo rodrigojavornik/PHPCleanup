@@ -2,13 +2,13 @@
 
 namespace PHPCleanup;
 
-use PHPCleanup\Filters\AbstractFilter;
 /**
- * @method static Sanitize sanitize() 
+ * @method static Sanitize sanitize($value) 
  * @method static Sanitize captalize()
  * @method static Sanitize captalizeAll()
- * @method static Sanitize dateTime($dateFormat = 'Y-m-d H:i:s') 
- * @method static Sanitize email() 
+ * @method static Sanitize dateTime($dateFormat = 'Y-m-d H:i:s')
+ * @method static Sanitize email()
+ * @method static Sanitize escape()
  * @method static Sanitize formatNumber($decimalPlace = 2, $decimalSeparator = '.', $thousandsSeparator = null) 
  * @method static Sanitize input() 
  * @method static Sanitize keys(array $list = []) 

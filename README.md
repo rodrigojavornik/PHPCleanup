@@ -1,5 +1,5 @@
 # PHP Cleanup
-#### A powerful sanitation PHP library
+#### A powerful sanitization library for PHP and Laravel.
 
 ### Installation
 ```sh

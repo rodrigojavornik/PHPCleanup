@@ -27,6 +27,12 @@
       "Tests\\": "tests/"
     }
   },
+  "autoload": {
+    "psr-4": {
+      "PHPCleanup\\": "library/",
+      "Tests\\": "tests/"
+    }
+  },
   "scripts": {
     "test": "phpunit ./tests --colors=always"
   }

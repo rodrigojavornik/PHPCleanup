@@ -7,6 +7,7 @@
     "library"
   ],
   "homepage": "https://github.com/rodrigojavornik/PHPCleanup",
+  "type": "library",
   "license": "MIT",
   "authors": [
     {
@@ -15,23 +16,17 @@
       "homepage": "https://rodrigojavornik.com"
     }
   ],
-  "require": {
-    "php": ">=7.0.0"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^9"
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "PHPCleanup\\": "library/",
-      "Tests\\": "tests/"
-    }
-  },
   "autoload": {
     "psr-4": {
       "PHPCleanup\\": "library/",
       "Tests\\": "tests/"
     }
+  },
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
   },
   "scripts": {
     "test": "phpunit ./tests --colors=always"

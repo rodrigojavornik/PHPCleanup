@@ -11,6 +11,6 @@ class OnlyLatinAlpha extends Only {
     public function __construct(string ...$additionalChars)
     {
         $this->additionalChars .= implode($additionalChars);
-        $this->setRegex("/([^A-Za-z$this->additionalChars]+)/");
+        $this->setRegex("/([^A-Za-z $this->additionalChars]+)/");
     }
 }

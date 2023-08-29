@@ -17,6 +17,10 @@ class Money extends AbstractFilter {
 
     public function sanitize($value)
     {
+        if (!is_numeric($value)) {
+            $value = (new OnlyNumbers())->sanitize($value);
+        }
+        
         return $this->moneyFormatter->formatCurrency($value, $this->moneySymbol);
     }
 }

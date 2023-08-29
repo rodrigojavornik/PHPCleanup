@@ -8,7 +8,7 @@ class FormatNumber extends AbstractFilter {
     private $decimalSeparator;
     private $thousandsSeparator;
 
-    public function __construct($decimalPlace = 2, $decimalSeparator = '.', $thousandsSeparator = null)
+    public function __construct($decimalPlace = 2, $decimalSeparator = '.', $thousandsSeparator = '')
     {
         $this->decimalPlace = $decimalPlace;
         $this->decimalSeparator = $decimalSeparator;

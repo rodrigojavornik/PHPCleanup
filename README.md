@@ -210,7 +210,7 @@ Sanitize::stripTags('<h1>')->sanitize('<html><h1>welcome</h1></html>')
 Strip whitespace from the beginning and end of a string
 **Return**: Sanitize object
 ```php
-Sanitize::uppercase()->sanitize(' blablabla ');
+Sanitize::trim()->sanitize(' blablabla ');
 //output: blablabla
 ```
 #### trim
